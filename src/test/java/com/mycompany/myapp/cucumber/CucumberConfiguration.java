@@ -17,11 +17,12 @@ import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
+import com.mycompany.myapp.authentication.infrastructure.primary.TestSecurityConfiguration;
 import com.mycompany.myapp.JhipsterSampleApplicationApp;
 import com.mycompany.myapp.cucumber.CucumberConfiguration.CucumberRestTemplateConfiguration;
 
 @CucumberContextConfiguration
-@SpringBootTest(classes = { JhipsterSampleApplicationApp.class, CucumberRestTemplateConfiguration.class }, webEnvironment = WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes = { JhipsterSampleApplicationApp.class, TestSecurityConfiguration.class, CucumberAuthenticationConfiguration.class, CucumberRestTemplateConfiguration.class }, webEnvironment = WebEnvironment.RANDOM_PORT)
 public class CucumberConfiguration {
 
   @Autowired
