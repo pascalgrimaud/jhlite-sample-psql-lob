@@ -153,5 +153,16 @@
       "endOfLine" : "lf",
       "indentSize" : 2
     }
+  }, {
+    "module" : "dummy-feature",
+    "date" : "2022-10-29T08:13:28.350852728Z",
+    "properties" : {
+      "packageName" : "com.mycompany.myapp",
+      "projectName" : "JHipster Sample Application",
+      "baseName" : "jhipsterSampleApplication",
+      "serverPort" : 8080,
+      "endOfLine" : "lf",
+      "indentSize" : 2
+    }
   } ]
 }
